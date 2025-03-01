@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: "Raleway", serif;
     font-style: normal;
-      }
+    }
     
 
 h1{
@@ -12,9 +12,9 @@ h1{
   font-style: normal;
 }
 
+
 .cv-container {
     width: 1160px;
-    margin: 50px auto;
     background: #f5f5f5;
     box-shadow: 0px 4px 5px rgba(51,51,51);
 }
@@ -22,7 +22,9 @@ h1{
 /* En-tête */
 header{
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    justify-content: space-between;
+    padding: 20px;
     background: #17abb3;
     color: #ffffff;
    }
@@ -33,9 +35,8 @@ header{
 }
 
 .infos {
-    margin: 30px;
+    flex-grow: 1;
     text-align: center;
-  
 }
 
 .contacts a,
@@ -50,16 +51,16 @@ header{
 /* Contenu principal */
 main {
     display: flex;
-    padding: 20px;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 /* Barre latérale */
 .sidebar {
-    width: 30%;
-    padding: 20px;
-    background: #e3e3e3;
+width:30%;
+padding: 20px;
+background: #f5f5f5;
 }
-
 .sidebar h3 {
     margin-bottom: 15px;
     color: #17abb3
@@ -77,46 +78,68 @@ main {
     color: #17abb3;
     padding: 40px;
 }
-.sidebar li star{
+.star{
+    display: flex;
+    justify-content:right; 
+    align-items: center;
+    padding: 5px;
     color: #17abb3;
-    padding: 40px;}
+}
 
-.sidebar li niveau{
-        color: black;
-        padding: 20px;
+.niveau{
+     display: flex;
+     justify-content:right; 
+    align-items: center;
+    color:#17abb3;
+    padding: 5px;      
     }
+.gras{
+    font-weight: bold;
+    color: black;
+}
 
 /* Section principale */
-.content {
-    width: 70%;
+.content{
+    width: 60%;
     padding: 20px;
     color: black;
     background-color: #ffffff;
 }
 .content h3{
+    border-bottom: 2px solid grey;
     color:#17abb3;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
 .content li{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.content date{
-    text-align: left;
-    color:#17abb3;
+.date{
+    
+   color:#17abb3;
+ 
+
 }
 /* Pied de page */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
     background: #17abb3;
     color: #ffffff;
-    bottom: 0;
-    width: 100%;
+  
 }
-footer i{
+footer a {
+    justify-content: center;
+    color: #ffffff;
     font-size: 24px;
-    margin: 0 10px;
+}
+
+footer i{
+    justify-content: right;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
